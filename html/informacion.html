@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Informacion</title>
+	<link rel="stylesheet" href="../estilos/informacion.css">
+	<link rel="stylesheet" href="../estilos/all.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../scripts/informacion.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<!-- Inicio parte superior de la pagina -->
+		<header class="header">
+			<img class="logo" src="../imagenes/Kf optica sin fondo.png" alt="">
+			<nav>
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="productosof.html">Productos ópticos</a></li>
+					<li><a href="citas.html">Pide tu cita</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="">Carrito <i class="fa-solid fa-cart-shopping"></i></a></li>
+					<li><a href="../login.html">Iniciar sesión <i class="fa-solid fa-user"></i></a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Fin parte superior de la pagina-->
+		<div class="wrap">
+			<ul class="tabs">
+				<li><a href="#tab1"><span class="fa-solid fa-circle-info"></span><span
+							class="tabs-text">Información</span></a></li>
+				<li><a href="#tab2" class="tab2"><span class="fa-solid fa-wallet"></span><span class="tabs-text">Metodo
+							de
+							pago</span></a></li>
+				<li><a href="#tab3" class="tab3"><span class="fa-solid fa-bag-shopping"></span><span
+							class="tabs-text">Confirmación</span></a></li>
+			</ul>
+			<div class="sectionTabs">
+				<!-- Pestaña de información -->
+				<article id="tab1">
+					<form action="#" class="form-register" id="forms">
+						<h1 class="title">Información de envió</h1>
+						<br>
+						
+						<div class="note" id="note">
+							<h2>Nota adicional</h2>
+							<textarea name="aditionalText" class="aditionalText" cols="80" rows="3"
+								placeholder="Escriba aqui su nota..." maxlength="250"></textarea>
+						</div>
+						<div class="formula" id="formula">
+							<h2>Adjuntar formula</h2>
+							<input type="file" name="" id="" placeholder="">
+						</div>
+						<input type="submit" value="Confirmar" id="boton" class="boton" hred>
+					</form>
+					<script src="../scripts/validacionInfo.js"></script>
+				</article>
+				<!-- Pestaña de información fin -->
+				<!-- Pestaña de metodo de pago -->
+				<article id="tab2">
+					<div class="pay">
+						<h1>Metodo de pago</h1>
+						<div class="paymentMethods">
+							<h2>Escoja como va a pagar:</h2>
+							<br>
+							<form action="" class="form-payment" id="form-payment">
+								<div class="methodTypes">
+									<div><input type="radio" name="pago" value="a" class="methodTypes-input" /><label
+											for="nequi">Nequi</label>
+									</div>
+									<div><input type="radio" name="pago" value="i" class="methodTypes-input" /><label
+											for="daviplata">Daviplata</label>
+									</div>
+									<div><input type="radio" name="pago" value="e" class="methodTypes-input" /><label
+											for="Efectivo">Efectivo</label>
+									</div>
+									<div><input type="radio" name="pago" value="o" class="methodTypes-input"><label
+											for="PSE">PSE</label>
+									</div>
+									<input type="submit" value="Continuar" class="btn-payment">
+								</div>
+							</form>
+						</div>
+						<div class="paymentSummary">
+							<img src="../imagenes/lentes.png">
+							<br><br><br>
+							<div class="subtotal">
+								<table>
+									<tr>
+										<td>
+											<p>Subtotal:</p>
+										</td>
+										<td class="subtotalPrice">
+											<p>$120.000</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Costos de envio:</p>
+										</td>
+										<td class="subtotalPrice">
+											<p>$120.000</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Total:</p>
+										</td>
+										<td class="subtotalPrice">
+											<p>$120.000</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- Pestaña de metodo de pago fin -->
+				<!-- Pestaña de confirmación -->
+				<article id="tab3">
+					<div class="confirm">
+						<h1>Confirma tu pedido</h1>
+						<div class="confirm-panels">
+							<div class="confirm-product">
+								<p class="confirm-titles"><i class="confirm-icon fa-solid fa-tag"></i>&nbsp;Producto
+								</p>
+								<img src="../imagenes/productos/Recortadas/Marco-COCO-Hombre-3_HD.png">
+							</div>
+							<div class="confirm-sending">
+								<p class="confirm-titles"><i class="confirm-icon fa-solid fa-truck"></i>&nbsp;Envío
+								</p>
+								<p>Dirección</p>
+							</div>
+							<div class="confirm-payment">
+								<p class="confirm-titles"><i class="confirm-icon fa-solid fa-dollar-sign"></i>&nbsp;Pago
+								</p>
+								<p>Metodo de pago...</p>
+								<p>Total: $$$</p>
+							</div>
+							<form action="#" class="form-btn" id="form-btn"><input type="submit" value="Confirmar" class="btn-confirm"></form>
+						</div>
+					</div>
+				</article>
+				<!-- Pestaña de confirmación fin -->
+			</div>
+		</div>
+		<!-- Inicio parte de footer -->
+		<footer class="footer">
+			<div class="menuR">
+				<h2>Nosotros</h2>
+				<nav class="menurap">
+					<ul>
+						<li><a href="nosotros.html">Nosotros</a></li>
+						<li><a href="">Garantia de los productos</a></li>
+						<li><a href="">Politicas de privacidad</a></li>
+						<li><a href="">Terminos y condiciones de envios</a></li>
+						<li><a href="">Preguntas frecuentes</a></li>
+						<li><a href="registrar.html">Registrarse</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="mapa" id="mapa">
+				<h2 class="ubica" id="ubica">Aquí nos ubicamos</h2>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9373471509643!2d-74.07577088573686!3d4.605240543761402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1b15eb485%3A0xc08dbb9d1850ebfc!2sCra.%209%20%2317-84%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1647496328949!5m2!1ses!2sco"
+					width="300" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div class="redes" id="redes">
+				<h2 class="social">Contáctanos</h2>
+				<nav>
+					<ul>
+						<li>Horario de atención:</li>
+						<li>Lunes a viernes de 8:00 a.m. a 5:00 p.m.</li>
+						<li>Números de contacto:</li>
+						<li>Tel. 601-394-2525</li>
+						<li>Cel. 320-222-0725</li>
+						<li>Redes sociales:</li>
+						<li id="face"><a href="https://www.facebook.com/kfoptica"><img
+									src="../imagenes/facebook_icono.png" alt="">Facebook</a></li>
+						<li id="what"><a href=""><img src="../imagenes/whatsapp_icono.png" alt="">Whatsapp</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="copyright">
+				<h3>Copyright © 2022 Kf Optica. Todos los derechos reservados.</h3>
+			</div>
+		</footer>
+		<!-- Fin parte de footer -->
+	</div>
+</body>
+
+</html>
